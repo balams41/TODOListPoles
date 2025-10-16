@@ -1,7 +1,7 @@
 services:
   php:
     build: .
-    container_name: php_app
+    container_name: php_todolist
     volumes:
       - .:/var/www/html
     depends_on:
@@ -9,7 +9,7 @@ services:
 
   nginx:
     image: nginx:latest
-    container_name: nginx_server
+    container_name: nginx_todolist
     ports:
       - "8080:80"
     volumes:
