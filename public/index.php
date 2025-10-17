@@ -10,5 +10,6 @@ $router = new Router();
  */
 $router->addRoute('/', 'HomeController', 'index');
 $router->addRoute('/ajout', 'TaskController', 'addTask');
+$router->addRoute('/', 'TaskControll', 'taskphp');
 
 $router->handleRequest();
